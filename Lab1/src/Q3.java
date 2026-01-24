@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q3 {
+public class Q3 { // Keep in mind int overflows pretty quickly, using long type is best practice.
 
     static int factorial(int n) {
 
