@@ -22,7 +22,8 @@ public class Book {
 
     // display method (since inside of book class expects book object)
     public void display() {
-        System.out.println("Book[title=" + getTitle() + ", author=" + getAuthor() + "]");
+        //System.out.println("Book[title=" + getTitle() + ", author=" + getAuthor() + "]"); ex1 a)
+        System.out.println(toString());
     }
 
     // utilizing toString() by default returns class name + mem hash, make my own to achieve same as display() (basically just changing the string it returns)

@@ -18,13 +18,13 @@ public class Tab {
     }
 
     // Method to calculate average
-    public static double average(int[] array) {
-        int sum = 0, average = 0;
+    public static int average(int[] array) {
+        int sum = 0;
 
         for (int i : array) { // For each element of type "int" inside collection "array" do: "sum += i"
             sum += i;
-        }        average = sum / array.length;
-        return average;
+        }
+        return sum / array.length;
     }
 
     public static void main(String[] args) {
@@ -52,11 +52,12 @@ public class Tab {
         System.out.println();
 
         // Compute and print averages
-        double avg1 = average(array1);
-        double avg2 = average(array2);
+        int avg1 = average(array1);
+        int avg2 = average(array2);
 
         System.out.println("The average value of array1 is " + avg1);
         System.out.println("The average value of array2 is " + avg2);
     }
 }
 
+// had to fix double type mismatches in example tab code because lab explicitly says to return an int typed average
