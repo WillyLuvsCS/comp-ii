@@ -11,7 +11,6 @@ public class SequenceMax{
             }
             if (tmp > max) {
                 max = tmp;
-                i++;
             }
         }
         return max;

@@ -1,9 +1,10 @@
 public class DivisibleNumber{
     public static int divisibleNumber(int[] x, int n) {
         int count = 0;
-
-        for (int i : x) {
-            if (i % n == 0 && i != 0) count++;
+        if (n != 0) {
+            for (int i : x) {
+                if (i % n == 0) count++;
+            }
         }
         return count;
     }
