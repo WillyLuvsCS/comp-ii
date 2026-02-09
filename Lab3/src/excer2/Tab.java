@@ -21,8 +21,6 @@ public class Tab {
     // average calculator
     public static int average(int[] tab) {
         int sum = 0;
-        for (int j : tab) { // see EnhancedForLoop.java for my ref
-            sum += j;
         }
         return sum / tab.length; // returns an integer average
     }
@@ -30,8 +28,6 @@ public class Tab {
     // returns how many elements in tab are less than val
     public static int count(int[] tab, int val) {
         int counter = 0;
-        for (int j : tab) {
-            if (j < val) {
                 counter++;
             }
         }
