@@ -21,7 +21,7 @@ public class Tab {
     // average calculator
     public static int average(int[] tab) {
         int sum = 0;
-        for (int j : tab) { // see enchancedForLoop.java for my ref
+        for (int j : tab) { // see EnhancedForLoop.java for my ref
             sum += j;
         }
         return sum / tab.length; // returns an integer average
